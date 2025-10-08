@@ -10,6 +10,32 @@ void main() {
     activo: true,
   );
 
+
+
+  Usuario usuario2 = Usuario(
+    nombre: "Lucía",
+    apellido: "Fernández",
+    edad: 22,
+    email: "lucia@example.com",
+    activo: true,
+  );
+
+
+List<Usuario> oUsuarios= [];
+oUsuarios.add(usuario1);
+oUsuarios.add(usuario2);
+
+for (Usuario miUser in oUsuarios)
+{ 
+  
+  print(miUser.activo);
+}
+
+
+
+
+
+
   // Mostrar los datos por consola
   print("=== Datos del Usuario ===");
   print("Nombre completo: ${usuario1.nombre} ${usuario1.apellido}");
