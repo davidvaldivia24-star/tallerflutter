@@ -1,67 +1,8 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  // Crear una instancia de la clase Usuario
-  Usuario usuario1 = Usuario(
-    nombre: "Lucía",
-    apellido: "Fernández",
-    edad: 22,
-    email: "lucia@example.com",
-    activo: true,
-  );
-
-
-
-  Usuario usuario2 = Usuario(
-    nombre: "Lucía",
-    apellido: "Fernández",
-    edad: 22,
-    email: "lucia@example.com",
-    activo: true,
-  );
-
-
-List<Usuario> oUsuarios= [];
-oUsuarios.add(usuario1);
-oUsuarios.add(usuario2);
-
-for (Usuario miUser in oUsuarios)
-{ 
-  
-  print(miUser.activo);
+  runApp(const MyApp());
 }
-
-
-
-
-
-
-  // Mostrar los datos por consola
-  print("=== Datos del Usuario ===");
-  print("Nombre completo: ${usuario1.nombre} ${usuario1.apellido}");
-  print("Edad: ${usuario1.edad}");
-  print("Correo electrónico: ${usuario1.email}");
-  print("¿Activo?: ${usuario1.activo ? 'Sí' : 'No'}");
-}
-
-// Definición de la clase Usuario
-class Usuario {
-  String nombre;
-  String apellido;
-  int edad;
-  String email;
-  bool activo;
-
-  // Constructor
-  Usuario({
-    required this.nombre,
-    required this.apellido,
-    required this.edad,
-    required this.email,
-    required this.activo,
-  });
-}
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
